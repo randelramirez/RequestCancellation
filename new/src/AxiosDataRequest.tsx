@@ -1,10 +1,12 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import axios from "axios";
 
 const url = "https://localhost:44365/WeatherForecast";
 
 function AxiosDataRequest() {
-  const [data, setData] = useState<any>();
+
+  const [data, setData] = useState();
 
   let cancelTokenSource = axios.CancelToken.source();
 
@@ -19,6 +21,7 @@ function AxiosDataRequest() {
       console.log(`Catch block ${error}`);
     }
   };
+
 
   const test = () => {};
 

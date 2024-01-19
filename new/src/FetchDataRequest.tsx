@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import axios from "axios";
 import { abort } from "process";
@@ -6,7 +7,7 @@ import { sign } from "crypto";
 const url = "https://localhost:44365/WeatherForecast";
 
 function FetchDataRequest() {
-  const [data, setData] = useState<any>();
+  const [data, setData] = useState();
 
   //   let cancelTokenSource = axios.CancelToken.source();
 
